@@ -55,6 +55,12 @@
     fill: var(--main-color);
   }
 }
+.team {
+  background-color: var(--team-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 480px) {
   .team {
     background-color: var(--team-background);

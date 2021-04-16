@@ -1,12 +1,13 @@
 :root {
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
-  --second-background: #2f303a;
-  --team-background: #f5f4fa;
-  --filter-list__btn-active-background: #188ce8;
-  --nav-color: #212121;
   --main-color: #ffffff;
   --second-color: #2196f3;
+  --second-background: #2f303a;
+  --team-background: #f5f4fa;
+  --title-pictures: rgba(47, 48, 58, 0.8);
+  --filter-list__btn-active-background: #188ce8;
+  --nav-color: #212121;
   --light-theme: #000000;
   --tel-link-color: #757575;
   --border-color: #eeeeee;
@@ -14,10 +15,9 @@
   --icon-color: #afb1b8;
   --overlay: rgba(33, 150, 243, 0.9);
   --modal-background: rgba(0, 0, 0, 0.2);
-  --title-pictures: rgba(47, 48, 58, 0.8);
   --filter-list__btn-background: rgba(0, 0, 0, 0.1);
-  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -555,8 +555,8 @@ body {
     margin-bottom: 64px;
   }
   .mobile-menu__link {
-    font-weight: 500;
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 24px;
     line-height: 1, 17;
     letter-spacing: 0.02em;
     color: var(--nav-color);
@@ -571,8 +571,8 @@ body {
     padding-bottom: 0px;
   }
   .mobile-contact__tel {
-    font-weight: 500;
-    font-size: 34px;
+    font-weight: 300;
+    font-size: 20px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--second-color);
@@ -581,13 +581,13 @@ body {
 
 @media screen and (max-width: 767px) and (min-width: 480px) {
   .mobile-contact__tel {
-    font-size: 34px;
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .mobile-contact__mail {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -786,13 +786,13 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 100%;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay/img-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay/img-desktop.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay/img@2-tablet.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay/img@2x-desktop.jpg);
   }
 }
 
@@ -849,7 +849,7 @@ body {
 }
 
 .advantage_lists__item:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .advantage_lists__card {
@@ -1032,6 +1032,12 @@ body {
   fill: var(--main-color);
 }
 
+.team {
+  background-color: var(--team-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 480px) {
   .team {
     background-color: var(--team-background);
@@ -1147,10 +1153,10 @@ body {
 }
 
 .address__footer-link {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   color: var(--footer-link);
   transition: color var(--transition-duration) var(--transition-function);
 }
