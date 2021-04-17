@@ -1038,6 +1038,14 @@ body {
   padding-bottom: 60px;
 }
 
+.team-lists__item {
+  margin-bottom: 30px;
+}
+
+.team-lists__item:last-child {
+  margin-bottom: 0px;
+}
+
 @media screen and (min-width: 480px) {
   .team {
     background-color: var(--team-background);
